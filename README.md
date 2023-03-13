@@ -47,9 +47,14 @@
 
 ## Running the Project
 
-1. In the terminal, run: `npm start` or `node server.js` or `nodemon server.js`
+1. In the terminal, run: `npm start`
 2. Browse to frontend at [localhost:4000](http://localhost:4000).
 
 ### Images of the Blog
-
-
+![Blog](/blog.png?raw=true{:height="50px"width="50px"})
+![Blog](/footer.png?raw=true{:height="50px"width="50px"})
+![Blog](/Header.png?raw=true{:height="50px"width="50px"})
+![Blog](/login.png?raw=true{:height="50px"width="50px"})
+![Blog](/newpost.png?raw=true{:height="50px"width="50px"})
+![Blog](/Post.png?raw=true{:height="50px"width="50px"})
+![Blog](/register.png?raw=true{:height="50px"width="50px"})
