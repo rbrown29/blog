@@ -15,7 +15,23 @@
 * EJS
 * MONGOOSE
 * BCRYPT
-* SUMMER NOTE (Text Editor for Blog Posts)
+* [SUMMER NOTE](https://summernote.org/) Text Editor for Blog Posts
+
+### USERS CAN:
+
+* SIGN UP
+* LOGIN 
+* VIEW BLOG POSTS
+* CREATE BLOG POSTS
+
+### THE SERVER CODE ADDED BY RICHARD BROWN AND FRONTEND EDITS:
+
+* CONTROLLERS
+* MIDDLEWARE
+* MODELS
+* VIEWS
+* LAYOUTS
+* INDEX.JS
 
 ### The Font End Shell was Provided by:
 
