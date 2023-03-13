@@ -49,3 +49,7 @@
 
 1. In the terminal, run: `npm start` or `node server.js` or `nodemon server.js`
 2. Browse to frontend at [localhost:4000](http://localhost:4000).
+
+### Images of the Blog
+
+
