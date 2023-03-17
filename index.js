@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const db =  mongoose.connection;
 
-mongoose.connect('mongodb://localhost/my_database',{useNewUrlParser: true});
+mongoose.connect('mongodb://localhost/my_database', {useNewUrlParser: true, useUnifiedTopology: true});
 db.on('error', (err) => console.log(err.message + ' is Mongod not running?'));
 db.on('connected', () => console.log('mongo connected: '));
 db.on('disconnected', () => console.log('mongo disconnected'));
@@ -66,4 +66,3 @@ app.get('/auth/login', redirectIfAuthenticatedMiddleware, loginController);
 app.post('/users/login', redirectIfAuthenticatedMiddleware, loginUserController);
 app.get('/auth/logout', logoutController);
 app.use((req, res) => res.render('notFound'));
-

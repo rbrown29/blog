@@ -3,6 +3,8 @@ const User = require('../models/User');
 
 module.exports = (req, res) => {
     const { username, password } = req.body;
+    const passwordError = 'Password is incorrect';
+    const usernameError = 'Username does not exist';
 
     User.findOne({ username: username }, (error, user) => {
         if (user) {
@@ -11,11 +13,18 @@ module.exports = (req, res) => {
                     req.session.userId = user._id;
                     res.redirect('/');
                 } else {
-                    res.redirect('/auth/login');
+                    const validationErrors = [passwordError];
+                    req.flash('validationErrors', validationErrors);
+                    req.flash('data', req.body);
+                    return res.redirect('/auth/login');
+
                 }
             });
         } else {
-            res.redirect('/auth/login');
+            const validationErrors = [usernameError];
+            req.flash('validationErrors', validationErrors);
+            req.flash('data', req.body);
+            return res.redirect('/auth/login');
         }
     }  
     );
