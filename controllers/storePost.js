@@ -2,10 +2,10 @@ const BlogPost = require('../models/BlogPost');
 const path = require('path');
 
 module.exports = async (req, res) => {
-    const { title, description } = req.body;
+    const { title, body } = req.body;
     const image = req.files ? req.files.image : null;
 
-    if (!title || !description || !image) {
+    if (!title || !body || !image) {
         // Set a flash message for missing information
         req.flash('error', 'Please provide a title, description, and image');
         return res.redirect('/posts/new');
@@ -27,6 +27,6 @@ module.exports = async (req, res) => {
 
             // Set a flash message for successful blog post creation
             req.flash('success', 'Blog post created successfully');
-            res.redirect('/');
+            res.redirect('/posts/new');
         });
 };
