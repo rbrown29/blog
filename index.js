@@ -1,7 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const db =  mongoose.connection;
-
 mongoose.connect('mongodb://localhost/my_database', {useNewUrlParser: true, useUnifiedTopology: true});
 db.on('error', (err) => console.log(err.message + ' is Mongod not running?'));
 db.on('connected', () => console.log('mongo connected: '));
@@ -13,7 +12,6 @@ const ejs = require('ejs');
 const { resourceUsage } = require('process');
 const flash = require('connect-flash');
 app.use(flash());
-
 const fileUpload = require('express-fileupload');
 
 app.set('view engine','ejs');
@@ -41,7 +39,6 @@ app.use("*", (req, res, next) => {
     loggedIn = req.session.userId;
     next();
 });
-
 app.listen(4000,()=>{
     console.log('App listening on port 4000')
 });
