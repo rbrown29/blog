@@ -15,7 +15,7 @@
 * EJS
 * MONGOOSE
 * BCRYPT
-* [SUMMER NOTE](https://summernote.org/) Text Editor for Blog Posts
+* [Quill](https://quilljs.com/) Text Editor for Blog Posts
 
 ### USERS CAN:
 
