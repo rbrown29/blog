@@ -47,19 +47,30 @@
                           <label>Description</label>
                           <textarea rows="5" class="form-control" id="body" name="body"></textarea>
                           <script>
-                            $('#body').summernote({
-                              tabsize: 2,
-                              height: 100,
-                              toolbar: [
-                                ['style', ['style']],
-                                ['font', ['bold', 'underline', 'clear']],
-                                ['fontname', ['fontname']],
-                                ['color', ['color']],
-                                ['para', ['ul', 'ol', 'paragraph']],
-                                ['table', ['table']],
-                                ['insert', ['link', 'picture', 'video']],
-                                ['view', ['fullscreen', 'codeview', 'help']]
-                              ],
+                            var quill = new Quill('#body', {
+                              theme: 'snow',
+                              modules: {
+                                toolbar: [
+                                  ['bold', 'italic'],
+                                  ['link', 'blockquote', 'code-block', 'image'],
+                                  [{ list: 'ordered' }, { list: 'bullet' }],
+                                  [{ script: 'sub' }, { script: 'super' }],
+                                  [{ indent: '-1' }, { indent: '+1' }],
+                                  [{ direction: 'rtl' }],
+                                  [{ size: ['small', false, 'large', 'huge'] }],
+                                  [{ header: [1, 2, 3, 4, 5, 6, false] }],
+                                  [{ color: [] }, { background: [] }],
+                                  [{ font: [] }],
+                                  [{ align: [] }],
+                                  ['clean'],
+                                  ['code-block'],
+                                  ['image'],
+                                  ['video'],
+                                  ['formula'],
+                                  ['link']
+
+                                ]
+                              }
                             });
                           </script>
 
