@@ -7,19 +7,19 @@ https://blog-05el.onrender.com
  
 ### Languages Used
 
-* HTML
-* CSS
-* JAVASCRIPT
-* JQUERY
+* ![HTML](https://img.shields.io/badge/HTML-HyperText%20Markup%20Language-red)
+* ![CSS](https://img.shields.io/badge/CSS-Cascade%20Style%20Sheets-blue)
+* ![JAVASCRIPT](https://img.shields.io/badge/JAVASCRIPT-JS-yellow)
+* ![JQUERY](https://img.shields.io/badge/JQUERY-JS-blue)
 
 ### Tecnologies Used
 
-* EXPRESS
-* NODE JS
-* MONGO DB
-* EJS
-* MONGOOSE
-* BCRYPT
+* ![Express](https://img.shields.io/badge/EXPRESS-Middleware-orange)
+* ![Node](https://img.shields.io/badge/NODE-JS-brightgreen)
+* ![Mongo DB](https://img.shields.io/badge/MONGO-DB-green)
+* ![EJS](https://img.shields.io/badge/EJS-EMBEDDED%20JAVASCRIPT-yellow)
+* ![Mongoose](https://img.shields.io/badge/MONGOOSE-JS-yellowgreen)
+* ![BCRYPT](https://img.shields.io/badge/BCRYPT-JS-blue)
 * [Quill](https://quilljs.com/) Text Editor for Blog Posts
 
 ### USERS CAN:
