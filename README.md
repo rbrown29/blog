@@ -1,4 +1,5 @@
 # Blog
+![blog](https://user-images.githubusercontent.com/53094729/233703603-5bd6a274-472d-4290-8ed4-8537842b713d.gif)
 
 ### Live Demo
 
@@ -55,10 +56,10 @@ https://blog-05el.onrender.com
 2. Browse to frontend at [localhost:4000](http://localhost:4000).
 
 ### Images of the Blog
-![Blog](/blog.png?raw=true{:height="50px"width="50px"})
-![Blog](/footer.png?raw=true{:height="50px"width="50px"})
-![Blog](/Header.png?raw=true{:height="50px"width="50px"})
-![Blog](/login.png?raw=true{:height="50px"width="50px"})
-![Blog](/newpost.png?raw=true{:height="50px"width="50px"})
-![Blog](/Post.png?raw=true{:height="50px"width="50px"})
-![Blog](/register.png?raw=true{:height="50px"width="50px"})
+<img src="/blog.png" />
+<img src="/footer.png" />
+<img src="/Header.png" />
+<img src="/login.png" />
+<img src="/newpost.png" />
+<img src="/Post.png" />
+<img src="/register.png" />
